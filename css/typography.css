@@ -15,19 +15,22 @@ h2 {
 	font-family: serif;
 }
 
-a, p {
-	font-size: 15pt;
-	font-family: serif;
-}
-
 p.justify {
 	text-align: justify;
 	text-justify: inter-word;
 }
 
+ul {
+	list-style-type: circle;
+}
+
 /*
  * Body
  * */
+body {
+	font-size: 15pt;
+	font-family: serif;
+}
 
 /*
  * Header
@@ -52,10 +55,6 @@ p.justify {
 /*
  * Main
  * */
-aside.upcoming-conferences ul {
-	list-style-type: circle;
-}
-
 .funding span.project {
 	font-weight: bold;
 }

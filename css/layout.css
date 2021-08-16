@@ -1,7 +1,25 @@
 /* 
  * General
  * */
-div.hamburger-menu .bar1,
+
+section {
+	margin: 0;
+	padding: 0;
+}
+
+section > h2,
+section > p {
+	margin: 0;
+	padding: 20px 50px;
+}
+
+section > p + p {
+	padding: 0px 50px 20px 50px;
+}
+
+
+
+/*div.hamburger-menu .bar1,
 div.hamburger-menu .bar2,
 div.hamburger-menu .bar3 {
 	width: 35px;
@@ -23,7 +41,7 @@ div.hamburger-menu.active .bar2 {
 div.hamburger-menu.active .bar3 {
 	-webkit-transform: rotate(45deg) translate(-8px, -8px);
 	transform: rotate(45deg) translate(-8px, -8px);
-}
+}*/
 
 /* 
  * Body
@@ -124,24 +142,6 @@ body {
 	#top-nav.responsive.active nav {
 		display: block;
 	}
-
-
-	/*#top-nav div.logo {
-		float: none;
-	}
-	#top-nav div.logo a.icon {
-		float: right;
-		display: inline;
-	}
-	#top-nav nav {
-		display: none;
-	}
-
-	#top-nav.responsive nav a,
-	#top-nav.responsive nav {
-		display: block;
-		float: none;
-	}*/
 }
 
 /*
@@ -152,26 +152,6 @@ main {
 	padding: 0;
 	flex: 1;
 }
-
-main > section {
-	margin: 0;
-	padding: 0;
-}
-
-main > section > h2,
-main > section > p {
-	margin: 0;
-	padding: 20px 50px;
-}
-
-main > section > p + p {
-	padding: 0px 50px 20px 50px;
-}
-
-
-
-
-
 
 @media all and (min-width: 800px) {
 	main#home {

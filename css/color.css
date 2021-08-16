@@ -1,6 +1,10 @@
 /*
  * General
  * */
+section > h2 {
+	color: #66FCF1;
+	background-color: #1F2833;
+}
 
 /*
  * Body
@@ -66,10 +70,6 @@
 /*
  * Main
  * */
-main > section h2 {
-	color: #66FCF1;
-	background-color: #1F2833;
-}
 
 /*
  * Footer
