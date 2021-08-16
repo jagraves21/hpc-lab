@@ -25,58 +25,6 @@ div.hamburger-menu.active .bar3 {
 	transform: rotate(45deg) translate(-8px, -8px);
 }
 
-.card-deck {
-	margin: 0;
-	padding: 20px 50px;
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.card {
-	float: left;
-	margin: 16px;
-	padding: 0;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	flex: 0 0 auto;
-	width: calc(100% - 32px);
-}
-
-.card > img.avatar {
-	/*display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
-	border-radius: 50%;*/
-	width: 100%;
-}
-
-.card-info {
-	padding: 15px 15px;
-}
-
-.card-info h3 {
-	text-align: center;
-}
-
-@media screen and (min-width: 600px) {
-	.card {
-		width: calc(50% - 32px);
-	}
-}
-@media screen and (min-width: 800px) {
-	.card {
-		width: calc(33% - 32px);
-	}
-}
-@media screen and (min-width: 1024px) {
-	.card {
-		width: calc(25% - 32px);
-	}
-}
-
-
 /* 
  * Body
  * */
@@ -91,7 +39,7 @@ body {
  * Header
  * */
 #page-header {
-	padding: 0px 50px;
+	padding: 0 25px;
 	min-height: 300px;
 	position: relative;
 	z-index: -3;
