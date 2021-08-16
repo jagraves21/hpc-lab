@@ -8,7 +8,6 @@
 }
 
 .card-deck .card {
-	float: left;
 	margin: 16px;
 	padding: 0;
 	box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
@@ -52,45 +51,36 @@
 }
 
 .large-card-deck {
-	margin: 0;
 	padding: 20px 50px;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	row-gap: 50px;
+	column-gap: 50px;
+	//border-style: solid;
+	border-color: green;
 }
 
 .large-card-deck .card {
-	//background-color: cyan;
-	margin: 50px 0;
-	//box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	display: contents;
+	//border-style: solid;
+	border-color: red;
 }
 
-.large-card-deck img.avatar {
-	
-	//display: block;
-	//float: left;
-	//width: auto;
-	//height: auto;
-	//margin-left: auto;
-	//margin-right: auto;
-	//width: 90%;
-	//flex: 0 0 0;
-	//border-radius: 50%;*/
-	//width: 100%;
+.large-card-deck .avatar {
+	width: 100%;
+	//border-style: solid;
+	border-color: silver;
 }
 
 .large-card-deck .card-info {
-	//background-color: silver;
-	margin: 0;
-	padding: 0 25px;
-	flex: 1 1 auto;
+	//border-style: solid;
+	border-color: blue;
 }
 
 .large-card-deck .card-info h3 {
 	margin: 0;
 	padding: 0;
 	font-size: 20pt;
-	//text-align: center;
 }
 
 .card-info .position,
@@ -112,19 +102,43 @@
 	margin: 0;
 }
 
+@media screen and (max-width: 600px) {
+	.large-card-deck {
+		row-gap: unset;
+		column-gap: unset;
+		margin: 0;
+		padding: 20px 50px;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 
-/*@media screen and (min-width: 600px) {
-	.card {
-		width: calc(50% - 32px);
+	.large-card-deck .card {
+		display: block;
+		margin: 16px;
+		padding: 0;
+		box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
+		border-radius: 20px;
+		overflow: hidden;
+		flex: 0 0 auto;
+		width: calc(100% - 32px);
+	}
+
+	.large-card-deck .avatar {
+		/*display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+		border-radius: 50%;*/
+		width: 100%;
+	}
+
+	.large-card-deck .card-info {
+		padding: 15px 15px;
+	}
+
+	.large-card-deck .card-info h3 {
+		text-align: center;
 	}
 }
-@media screen and (min-width: 800px) {
-	.card {
-		width: calc(33% - 32px);
-	}
-}
-@media screen and (min-width: 1024px) {
-	.card {
-		width: calc(25% - 32px);
-	}
-}*/

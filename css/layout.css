@@ -126,10 +126,6 @@ body {
 		display: block;
 	}
 
-	#top-nav.responsive div.logl a {
-		display: block;
-		float: left;
-	}
 	#top-nav-hamburger {
 		cursor: pointer;
 		display: block;
