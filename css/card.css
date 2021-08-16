@@ -56,25 +56,17 @@
 	grid-template-columns: auto 1fr;
 	row-gap: 50px;
 	column-gap: 50px;
-	//border-style: solid;
-	border-color: green;
 }
 
 .large-card-deck .card {
 	display: contents;
-	//border-style: solid;
-	border-color: red;
 }
 
 .large-card-deck .avatar {
 	width: 100%;
-	//border-style: solid;
-	border-color: silver;
 }
 
 .large-card-deck .card-info {
-	//border-style: solid;
-	border-color: blue;
 }
 
 .large-card-deck .card-info h3 {

@@ -88,15 +88,11 @@ body {
 	width: 100%;
 	overflow: hidden;
 	position: fixed;
-	//border-style: solid;
-	//border-color: red;
 }
 
 #top-nav div.logo {
 	padding: 5px;
 	float: left;
-	//border-style: solid;
-	//border-color: green;
 }
 #top-nav-hamburger {
 	display: none;
@@ -105,8 +101,6 @@ body {
 #top-nav nav {
 	padding: 5px;
 	float: right;
-	//border-style: solid;
-	//border-color: blue;
 }
 
 #top-nav a {
@@ -152,7 +146,7 @@ main {
 @media all and (min-width: 800px) {
 	main#home {
 		display: flex;
-		flex-flow: row;// wrap;
+		flex-flow: row wrap;
 	}
 	main#home aside {
 		margin: 15px;
