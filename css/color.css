@@ -1,0 +1,84 @@
+/*
+ * General
+ * */
+
+/*
+ * Body
+ * */
+
+/*
+ * Header
+ * */
+#page-header {
+	background-color: black;
+}
+
+#page-header:after {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("/images/backgrounds/hardware-small.png");
+	opacity: 0.50;
+}
+
+#page-header > h1 {
+	color: white;
+}
+
+/*
+ * Top Bar
+ * */
+#top-nav {
+	background-color: rgba(0, 0, 0, 0.0);
+}
+
+#top-nav a {
+	color: silver;
+}
+
+#top-nav a.active,
+#top-nav a:hover {
+	color: white;
+}
+
+#top-nav.sticky {
+	background-color: #0B0C10;
+}
+
+#top-nav.sticky a.active,
+#top-nav.sticky a:hover {
+	color: #66FCF1;
+}
+
+@media screen and (max-width: 920px) {
+	#top-nav {
+		background-color: #0B0C10;
+	}
+	#top-nav nav {
+		background-color: #1F2833;
+	}
+	#top-nav a.active,
+	#top-nav a:hover {
+		color: #66FCF1;
+	}
+}
+
+/*
+ * Main
+ * */
+main > section h2 {
+	color: #66FCF1;
+	background-color: #1F2833;
+}
+
+/*
+ * Footer
+ * */
+#page-footer {
+	color: silver;
+	background-color: #1F2833;
+}
+
+#page-footer a {
+	color: red;
+}

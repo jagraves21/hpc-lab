@@ -1,0 +1,96 @@
+/*
+ * General
+ * */
+h1 {
+	font-size: 50pt;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-family: serif;
+}
+
+h2 {
+	font-size: 25pt;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-family: serif;
+}
+
+a, p {
+	font-size: 15pt;
+	font-family: serif;
+}
+
+p.justify {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+/*
+ * Body
+ * */
+
+/*
+ * Header
+ * */
+
+/*
+ * Top Bar
+ * */
+#top-nav nav {
+	font-variant: small-caps;
+}
+
+#top-nav a {
+	font-size: 20pt;
+	text-decoration: none;
+}
+
+#top-nav a.active {
+	font-weight: bold;
+}
+
+/*
+ * Main
+ * */
+aside.upcoming-conferences ul {
+	list-style-type: circle;
+}
+
+.funding span.project {
+	font-weight: bold;
+}
+
+.funding span.agency,
+.funding span.start-date,
+.funding span.end-date,
+.funding span.award {
+	font-style: italic;
+}
+
+.funding span.project:after {
+	content: ".";
+}
+
+.funding span.pi:before {
+	content: "PI(s): ";
+}
+.funding span.co-pi:before {
+	content: "Co-PI(s): ";
+}
+
+.funding span.pi ~ span.pi:before,
+.funding span.co-pi ~ span.co-pi:before {
+	content: "";
+}
+
+.funding span.pi:after,
+.funding span.co-pi:after {
+	content: ",";
+}
+
+/*
+ * Footer
+ * */
+#page-footer p {
+	font-size: small;
+}
