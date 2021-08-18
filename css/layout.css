@@ -76,7 +76,7 @@ body {
 }
 
 #top-nav div.logo {
-	padding: 25px;
+	padding: 20px;
 	float: left;
 }
 #top-nav-hamburger {
@@ -84,7 +84,7 @@ body {
 }
 
 #top-nav nav {
-	padding: 25px;
+	padding: 20px;
 	float: right;
 }
 
@@ -94,7 +94,8 @@ body {
 
 @media screen and (max-width: 920px) {
 	#top-nav div.logo {
-		padding: 5px;
+		padding: 7px;
+		overflow: hidden;
 		float: none;
 	}
 	#top-nav nav {
