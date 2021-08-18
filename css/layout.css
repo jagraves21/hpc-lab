@@ -10,21 +10,21 @@ section {
 section > h2,
 section > p {
 	margin: 0;
-	padding: 10px 25px;
+	padding: 20px 50px;
 }
 
 section > p + p {
-	padding: 0px 25px 10px 25px;
+	padding: 0px 50px 20px 50px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
 	section > h2,
 	section > p {
-		padding: 20px 50px;
+		padding: 10px 25px;
 	}
 
 	section > p + p {
-		padding: 0px 50px 20px 50px;
+		padding: 0px 25px 10px 25px;
 	}
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 #top-nav div.logo {
-	padding: 5px;
+	padding: 25px;
 	float: left;
 }
 #top-nav-hamburger {
@@ -84,7 +84,7 @@ body {
 }
 
 #top-nav nav {
-	padding: 5px;
+	padding: 25px;
 	float: right;
 }
 
@@ -94,6 +94,7 @@ body {
 
 @media screen and (max-width: 920px) {
 	#top-nav div.logo {
+		padding: 5px;
 		float: none;
 	}
 	#top-nav nav {
