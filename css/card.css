@@ -145,13 +145,12 @@
 	.large-card-deck .card {
 		display: block;
 		width: 100%;
-		color: red;
 		box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
 		border-radius: 20px;
 		overflow: hidden;
 		flex: 0 0 auto;
 	}
-	.card-deck .card ~ .card{
+	.large-card-deck .card ~ .card{
 		margin-top: 20px;
 	}
 
