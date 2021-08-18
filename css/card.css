@@ -70,6 +70,9 @@
 	}
 }
 @media screen and (max-width: 600px) {
+	.card-deck {
+		padding: 20px 25px;
+	}
 	.card-deck .card {
 		width: 100%;
 	}
