@@ -13,8 +13,8 @@ section > p {
 	padding: 20px 50px;
 }
 
-section > p + p {
-	padding: 0px 50px 20px 50px;
+section > p ~ p {
+	padding-top: unset;
 }
 
 @media screen and (max-width: 600px) {
@@ -23,8 +23,8 @@ section > p + p {
 		padding: 10px 25px;
 	}
 
-	section > p + p {
-		padding: 0px 25px 10px 25px;
+	section > p ~ p {
+		padding-top: unset;
 	}
 }
 

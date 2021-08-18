@@ -1,21 +1,14 @@
 .card-deck {
-	margin: 0;
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
 	flex-wrap: wrap;
-	border-style: solid;
-	border-color: red;
 }
 
 .card-deck .card {
-	margin: 16px;
-	padding: 0;
 	box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
 	border-radius: 20px;
 	overflow: hidden;
-	flex: 0 0 auto;
-	width: calc(100% - 32px);
 }
 
 .card-deck .avatar {
@@ -25,34 +18,45 @@
 	width: 90%;
 	border-radius: 50%;*/
 	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .card-deck .card-info {
-	padding: 15px 15px;
+	padding: 15px;
 }
 
 .card-deck .card-info h3 {
+	margin: 0;
 	text-align: center;
 }
 
-@media screen and (min-width: 600px) {
-	.card-deck { 
-		padding: 20px 50px;
+
+@media screen and (max-width: 600px) {
+	.card-deck {
+		padding: 20px 0;
 	}
 	.card-deck .card {
-		width: calc(50% - 32px);
+		//margin: 20px 0;
+		width: calc(100% - 50px);
+	}
+	.card-deck .card ~ .card{
+		margin-top: 20px;
+	}
+	.card-deck .card-info {
+		color: red;
+		background-color: silver;
 	}
 }
-@media screen and (min-width: 800px) {
-	.card-deck .card {
-		width: calc(33% - 32px);
-	}
-}
+
+
+/*
 @media screen and (min-width: 1024px) {
 	.card-deck .card {
 		width: calc(25% - 32px);
 	}
 }
+*/
 
 .large-card-deck {
 	padding: 20px 50px;
