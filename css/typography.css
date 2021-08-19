@@ -55,58 +55,58 @@ body {
 /*
  * Main
  * */
-.funding .project {
+.grant .project {
 	font-weight: bold;
 }
 
-.funding .agency,
-.funding .start-date,
-.funding .end-date,
-.funding .award {
+.grant .agency,
+.grant .start-date,
+.grant .end-date,
+.grant .award {
 	font-style: italic;
 }
 
-.funding .project:after {
+.grant .project:after {
 	content: ".";
 }
 
 
-.funding .agency:after {
+.grant .agency:after {
 	content: ",";
 }
 
-.funding .start-date + .end-date:before {
+.grant .start-date + .end-date:before {
 	content: "- ";
 }
 
-.funding .end-date:after {
+.grant .end-date:after {
 	content: ",";
 }
 
-.funding .amount:after {
+.grant .amount:after {
 	content: ".";
 }
 
-.funding .pi:before {
+.grant .pi:before {
 	content: "PI(s): ";
 }
-.funding .co-pi:before {
+.grant .co-pi:before {
 	content: "Co-PI(s): ";
 }
 
-.funding .pi ~ .pi:before,
-.funding .co-pi ~ .co-pi:before {
+.grant .pi ~ .pi:before,
+.grant .co-pi ~ .co-pi:before {
 	content: "";
 }
 
-.funding .pi:after,
-.funding .co-pi:after {
+.grant .pi:after,
+.grant .co-pi:after {
 	content: ",";
 }
 
 /* this does not work right */
-.funding .pi:nth-last-of-type(1):after,
-.funding .co-pi:nth-last-of-type(1):after {
+.grant .pi:nth-last-of-type(1):after,
+.grant .co-pi:nth-last-of-type(1):after {
 	content: ".";
 }
 
