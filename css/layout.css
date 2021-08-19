@@ -138,6 +138,7 @@ main {
 }
 
 #funding .funding-logos img {
+	max-width: 100%;
 	margin: 20px;
 }
 
