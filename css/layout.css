@@ -129,6 +129,18 @@ main {
 	flex: 1;
 }
 
+#funding .logos {
+	padding: 20px 50px;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+#funding .logos img {
+	margin: 20px;
+}
+
 @media all and (min-width: 800px) {
 	main#home {
 		display: flex;
