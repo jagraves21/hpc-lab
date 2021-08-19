@@ -55,36 +55,59 @@ body {
 /*
  * Main
  * */
-.funding span.project {
+.funding .project {
 	font-weight: bold;
 }
 
-.funding span.agency,
-.funding span.start-date,
-.funding span.end-date,
-.funding span.award {
+.funding .agency,
+.funding .start-date,
+.funding .end-date,
+.funding .award {
 	font-style: italic;
 }
 
-.funding span.project:after {
+.funding .project:after {
 	content: ".";
 }
 
-.funding span.pi:before {
+
+.funding .agency:after {
+	content: ",";
+}
+
+.funding .start-date + .end-date:before {
+	content: "- ";
+}
+
+.funding .end-date:after {
+	content: ",";
+}
+
+.funding .amount:after {
+	content: ".";
+}
+
+.funding .pi:before {
 	content: "PI(s): ";
 }
-.funding span.co-pi:before {
+.funding .co-pi:before {
 	content: "Co-PI(s): ";
 }
 
-.funding span.pi ~ span.pi:before,
-.funding span.co-pi ~ span.co-pi:before {
+.funding .pi ~ .pi:before,
+.funding .co-pi ~ .co-pi:before {
 	content: "";
 }
 
-.funding span.pi:after,
-.funding span.co-pi:after {
+.funding .pi:after,
+.funding .co-pi:after {
 	content: ",";
+}
+
+/* this does not work right */
+.funding .pi:nth-last-of-type(1):after,
+.funding .co-pi:nth-last-of-type(1):after {
+	content: ".";
 }
 
 /*

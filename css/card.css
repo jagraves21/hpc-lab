@@ -1,7 +1,7 @@
 .card-deck {
 	padding: 20px 50px;
 	display: flex;
-	justify-content: center;
+	//justify-content: center;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
@@ -31,6 +31,27 @@
 .card-deck .card-info h3 {
 	margin: 0;
 	text-align: center;
+}
+
+.card-deck .card-info .degree,
+.card-deck .card-info .position,
+.card-deck .card-info .department,
+.card-deck .card-info .organization,
+.card-deck .card-info .website,
+.card-deck .card-info .interests {
+	padding: 0.5em 0 0 0;
+}
+
+.card-deck .card-info .degree,
+.card-deck .card-info .position,
+.card-deck .card-info .department,
+.card-deck .card-info .organization {
+	//font-size: 17pt;
+	font-weight: bold;
+}
+
+.card-deck .card-info .interests ul {
+	margin: 0;
 }
 
 @media screen and (min-width: 801px) and (min-width: 1025px) {
@@ -103,7 +124,7 @@
 }
 
 .large-card-deck .avatar {
-	width: 100%;
+	max-width: 300px;
 }
 
 .large-card-deck .card-info {
@@ -115,22 +136,22 @@
 	font-size: 20pt;
 }
 
-.card-info .position,
-.card-info .department,
-.card-info .organization,
-.card-info .website,
-.card-info .interests {
-	padding: 16px 0 0 0;
+.large-card-deck .card-info .position,
+.large-card-deck .card-info .department,
+.large-card-deck .card-info .organization,
+.large-card-deck .card-info .website,
+.large-card-deck .card-info .interests {
+	padding: 0.5em 0 0 0;
 }
 
-.card-info .position,
-.card-info .department,
-.card-info .organization {
+.large-card-deck .card-info .position,
+.large-card-deck .card-info .department,
+.large-card-deck .card-info .organization {
 	font-size: 17pt;
 	font-weight: bold;
 }
 
-.card-info .interests ul {
+.large-card-deck .card-info .interests ul {
 	margin: 0;
 }
 
@@ -164,6 +185,7 @@
 		width: 90%;
 		border-radius: 50%;*/
 		width: 100%;
+		max-width: none;
 		margin: 0;
 		padding: 0;
 	}
