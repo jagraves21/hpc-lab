@@ -1,7 +1,7 @@
 .card-deck {
 	padding: 20px 50px;
 	display: flex;
-	//justify-content: center;
+	/*justify-content: center;*/
 	flex-direction: row;
 	flex-wrap: wrap;
 }
@@ -46,7 +46,6 @@
 .card-deck .card-info .position,
 .card-deck .card-info .department,
 .card-deck .card-info .organization {
-	//font-size: 17pt;
 	font-weight: bold;
 }
 
