@@ -6,29 +6,25 @@
 		<meta name="robots" content="noindex">
 		<title>HPCS Lab | Funding</title>
 		<link rel="icon" type="image/png" href="/images/favicons/invader.png">
-		<link rel="stylesheet" href="/css/typography.css">
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/hamburgers.css">
 		<link rel="stylesheet" href="/css/layout.css">
+		<link rel="stylesheet" href="/css/typography.css">
 		<link rel="stylesheet" href="/css/color.css">
 		<link rel="stylesheet" href="/css/card.css">
-		<link rel="stylesheet" href="/css/hamburgers.css">
 		<script src="/javascript/main.js"></script>
 	</head>
 
-	<body>
-		<header id="page-header">
+	<body id="funding">
+		<header id="page_header">
 			<h1>Funding</h1>
 		</header>
 		
-		<div id="top-nav">
-			<div class="logo">
-				<a href="/" class="active">HPCS Lab</a>
-				<button id="top-nav-hamburger" class="hamburger hamburger--squeeze" type="button">
-					<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-					</span>
-				</button>
+		<div id="top_nav">
+			<div id="top_nav_logo">
+				<a href="/" class="logo active">HPCS Lab</a>
 			</div>
-			<nav>
+			<nav id="top_nav_links">
 				<a href="/">Home</a>
 				<a href="/people.html">People</a>
 				<a href="/research.html">Research</a>
@@ -37,17 +33,17 @@
 			</nav>
 		</div>
 
-		<main id="funding">
-			<section>
+		<main>
+			<section class="funding-agencies">
 				<h2>Funding Agencies</h2>
 				<div class="funding-logos">
-					<img src="images/funding/oak_ridge_national_laboratory.png"/ alt="Oak Ridge National Laboratory" class="logo"/>
-					<img src="images/funding/national_science_foundation.png"/ alt="National Science Foundation" class="logo"/>
-					<img src="images/funding/national_security_agency.png"/ alt="National Security Agency" class="logo"/>
+					<img src="images/funding/oak_ridge_national_laboratory.png" alt="Oak Ridge National Laboratory" class="logo"/>
+					<img src="images/funding/national_science_foundation.png" alt="National Science Foundation" class="logo"/>
+					<img src="images/funding/national_security_agency.png" alt="National Security Agency" class="logo"/>
 				</div>
 			</section>
-			<section class="funding">
-				<h2>2020</h2>
+			<details open class="funding">
+				<summary>2020</summary>
 				<p class="grant justify">
 					<span class="project">Collaborative Research: CyberTraining: Implementation: Medium: Broadening Adoption of Parallel and Distributed Computing in Undergraduate Computer Science and Engineering Curricula</span>
 					<span class="agency">National Science Foundation (NSF)</span>
@@ -108,9 +104,9 @@
 					<span class="pi">Susmit Shannigrahi</span>
 					<span class="co-pi">Michael Rogers</span>
 				</p>
-			</section>
-			<section class="funding">
-				<h2>2019</h2>
+			</details>
+			<details open class="funding">
+				<summary>2019</summary>
 				<p class="grant justify">
 					<span class="project">Software Engineering Workforce Development in High Performance Computing for Digital Twins</span>
 					<span class="agency">National Science Foundation (NSF)</span>
@@ -153,9 +149,9 @@
 					<span class="pi">Prasun Dewan</span>
 					<span class="co-pi">Sheikh Ghafoor</span>
 				</p>
-			</section>
-			<section class="funding">
-				<h2>2018</h2>
+			</details>
+			<details open class="funding">
+				<summary>2018</summary>
 				<p class="grant justify">
 					<span class="project">Detection and Analysis of Malware in Critical Infrastructure</span>
 					<span class="agency">Oak Ridge National Laboratory (ORNL)</span>
@@ -185,9 +181,9 @@
 					<span class="pi">Alfred Kalyanapu</span>
 					<span class="co-pi">Sheikh Ghafoor</span>
 				</p>
-			</section>
-			<section class="funding">
-				<h2>2017</h2>
+			</details>
+			<details open class="funding">
+				<summary>2017</summary>
 				<p class="grant justify">
 					<span class="project">Cyber Training: CDL: iPDC – Summer Institute for Integrating Parallel and Distributed Computing in Introductory Programming Classes</span>
 					<span class="agency">National Science Foundation (NSF)</span>
@@ -217,9 +213,9 @@
 					<span class="pi">Sheikh Ghafoor</span>
 					<span class="co-pi">Michael Rogers</span>
 				</p>
-			</section>
-			<section class="funding">
-				<h2>2016</h2>
+			</details>
+			<details open class="funding">
+				<summary>2016</summary>
 				<p class="grant justify">
 					<span class="project">Benchmark and Analyze of Open Source Parallel XXT Libraries on Different HPC Architectures for Performance Prediction</span>
 					<span class="agency">Oak Ridge National Laboratory (ORNL)</span>
@@ -247,9 +243,9 @@
 					<span class="pi">Alfred Kalyanapu</span>
 					<span class="co-pi">Sheikh Ghafoor</span>
 				</p>
-			</section>
-			<section class="funding">
-				<h2>2015</h2>
+			</details>
+			<details open class="funding">
+				<summary>2015</summary>
 				<p class="grant justify">
 					<span class="project">Knowledge-Based Flood Inundation Forecast on Affordable Mobile Platforms to Empower Farmers</span>
 					<span class="agency">University of Washington</span>
@@ -278,9 +274,9 @@
 					<span class="amount">$5,000</span>
 					<span class="pi">Sheikh Ghafoor</span>
 				</p>
-			</section>
-			<section class="funding">
-				<h2>2014</h2>
+			</details>
+			<details class="funding">
+				<summary>2014</summary>
 				<p class="grant justify">
 					<span class="project">Collaborative Research: CyberWorkshops: Resources and Strategies for Teaching Cybersecurity in Computer Science (CReST)</span>
 					<span class="agency">National Science Foundation (NSF)</span>
@@ -298,9 +294,9 @@
 					<span class="pi">Sheikh Ghafoor</span>
 					<span class="co-pi">Michael Rogers</span>
 				</p>
-			</section>
-			<section class="funding">
-				<h2>2012</h2>
+			</details>
+			<details class="funding">
+				<summary>2012</summary>
 				<p class="grant justify">
 					<span class="project">SecKnitKit (Security Knitting Kit): Integrating Security into Traditional Computer Science Courses</span>
 					<span class="agency">National Science Foundation (NSF)</span>
@@ -310,9 +306,9 @@
 					<span class="pi">Ambareen Siraj</span>
 					<span class="co-pi">Sheikh Ghafoor</span>
 				</p>
-			</section>
-			<section class="funding">
-				<h2>2011</h2>
+			</details>
+			<details class="funding">
+				<summary>2011</summary>
 				<p class="grant justify">
 					<span class="project">Autonomic Dynamic Resource-­Aware Runtime System</span>
 					<span class="agency">Sandia National Laboratories (SNL)</span>
@@ -322,9 +318,9 @@
 					<span class="pi">Stephen Scott</span>
 					<span class="supplementary">Senior Personnel: Sheikh Ghafoor</span>
 				</p>
-			</section>
-			<section class="funding">
-				<h2>2010</h2>
+			</details>
+			<details class="funding">
+				<summary>2010</summary>
 				<p class="grant justify">
 					<span class="project">Enhancing the Programming Experience for First-Year Engineering Students through Hands-On Integrated Computer Experiences</span>
 					<span class="agency">National Science Foundation (NSF)</span>
@@ -337,9 +333,9 @@
 					<span class="co-pi">Essam Ibrahim</span>
 					<span class="co-pi">Johne' Parker</span>
 				</p>
-			</section>
-			<section class="funding">
-				<h2>2009</h2>
+			</details>
+			<details class="funding">
+				<summary>2009</summary>
 				<p class="grant justify">
 					<span class="project">Modeling and Simulation of an Adaptive Parallel System</span>
 					<span class="agency">Office of Research, Tennessee Tech. University</span>
@@ -348,10 +344,10 @@
 					<span class="amount">$4,000</span>
 					<span class="pi">Sheikh Ghafoor</span>
 				</p>
-			</section>
+			</details>
 		</main>
 
-		<footer id="page-footer">
+		<footer id="page_footer">
 			<address>
 				<p>Tennessee Tech. University</p>
 				<p>Cookeville, TN, 38505</p>

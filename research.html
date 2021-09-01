@@ -6,29 +6,25 @@
 		<meta name="robots" content="noindex">
 		<title>HPCS Lab | Research</title>
 		<link rel="icon" type="image/png" href="/images/favicons/invader.png">
-		<link rel="stylesheet" href="/css/typography.css">
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/hamburgers.css">
 		<link rel="stylesheet" href="/css/layout.css">
+		<link rel="stylesheet" href="/css/typography.css">
 		<link rel="stylesheet" href="/css/color.css">
 		<link rel="stylesheet" href="/css/card.css">
-		<link rel="stylesheet" href="/css/hamburgers.css">
 		<script src="/javascript/main.js"></script>
 	</head>
 
-	<body>
-		<header id="page-header">
+	<body id="research">
+		<header id="page_header">
 			<h1>Research</h1>
 		</header>
 		
-		<div id="top-nav">
-			<div class="logo">
-				<a href="/" class="active">HPCS Lab</a>
-				<button id="top-nav-hamburger" class="hamburger hamburger--squeeze" type="button">
-					<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-					</span>
-				</button>
+		<div id="top_nav">
+			<div id="top_nav_logo">
+				<a href="/" class="logo active">HPCS Lab</a>
 			</div>
-			<nav>
+			<nav id="top_nav_links">
 				<a href="/">Home</a>
 				<a href="/people.html">People</a>
 				<a href="/research.html" class="active">Research</a>
@@ -37,23 +33,23 @@
 			</nav>
 		</div>
 
-		<main id="research">
-			<section class="research">
-				<h2>Black Box</h2>
-				<p class="justify">New Knowledge that often can only be derived by combing data gathered from multiple sources can increase profits for business, or even save or improve people’s lives. Typically, however, source institutions do not want their information to be known. Reasons include protecting trade-secrets, avoiding violating HIPPA, FERPA, or other privacy laws, and protecting government secrets. In fact, often such institutions would rather not produce the valuable information if it means that the secrecy of the source data would be violated. This project creates an architecture that provides a computing platform with secure protocols, physical security, and a secure computational environment for combining data from distributed sources.</p>
-			</section>
-			<section class="research">
-				<h2>Secure Industrial Control Systems</h2>
-				<p class="justify">Detecting intrusions and anomalies in Industrial Control Systems at early stages is important to prevent process failure. Operator errors, device or equipment failures, and other non-network events could lead to a critical state. As a result, these events can indirectly lead to anomalous network traffic, and, thus, a manually configured IDS that uses network traffic alone can generate false positives and false negatives. In this paper, we propose a novel approach that uses multimodal machine learning and incorporates both network data and device state information to improve the detection accuracy. Our methodology can detect anomalies as well as their root causes, which is essential. To protect device state data,we use a secure data container to store log records for devices in cyber-physical systems. The secure data container provides protection for log records in transit and at rest. It also supports role-based and attribute-based access control and protects against insider threats.</p>
-			</section>
-			<section class="research">
-				<h2>HPC in Computer Science Education</h2>
-				<p class="justify">Widespread deployment of multicore and GPU based computer systems is making even common users dependent on parallel processing. This change and others in the computing landscape point to the need for providing a broad-based skill set in PDC technology at various levels in the educational fabric woven by Computer Science (CS) and Computer Engineering (CE) programs, as well as related Engineering and Computational disciplines. However, most undergraduate CS/CE/Engineering programs do not teach PDC concepts, and students are typically trained to think and program exclusively in a sequential manner. Undergraduate programs should train the students to think parallel and code parallel from the beginning of the curriculum, enabling students to design and develop applications that can take advantage of the emerging computers and to meet the current and future PDC challenges. The majority of the current effort of integrating PDC in undergraduate curriculum limited to upper division classes such as operating systems, networks, systems programming, computer architecture, with very few efforts introductory classes.</p>
-				<p class="justify">The overall goal of this project is to prepare CS/CE/Engineering undergraduate students for their future careers in light of the technological shifts towards parallelism by incorporating PDC topics throughout their curriculum following ACM/IEEE and TCPP curriculum guidelines. To achieve this goal, our project will be to pull education professionals from across the nation to workshops where they can receive training in PDC and the material necessary to introduce the concepts in their curriculum.</p>
-			</section>
+		<main>
+			<details open>
+				<summary>Secure Industrial Control Systems</summary>
+				<p>Detecting intrusions and anomalies in Industrial Control Systems at early stages is important to prevent process failure. Operator errors, device or equipment failures, and other non-network events could lead to a critical state. As a result, these events can indirectly lead to anomalous network traffic, and, thus, a manually configured IDS that uses network traffic alone can generate false positives and false negatives. In this paper, we propose a novel approach that uses multimodal machine learning and incorporates both network data and device state information to improve the detection accuracy. Our methodology can detect anomalies as well as their root causes, which is essential. To protect device state data,we use a secure data container to store log records for devices in cyber-physical systems. The secure data container provides protection for log records in transit and at rest. It also supports role-based and attribute-based access control and protects against insider threats.</p>
+			</details>
+			<details open>
+				<summary>HPC in Computer Science Education</summary>
+				<p>Widespread deployment of multicore and GPU based computer systems is making even common users dependent on parallel processing. This change and others in the computing landscape point to the need for providing a broad-based skill set in PDC technology at various levels in the educational fabric woven by Computer Science (CS) and Computer Engineering (CE) programs, as well as related Engineering and Computational disciplines. However, most undergraduate CS/CE/Engineering programs do not teach PDC concepts, and students are typically trained to think and program exclusively in a sequential manner. Undergraduate programs should train the students to think parallel and code parallel from the beginning of the curriculum, enabling students to design and develop applications that can take advantage of the emerging computers and to meet the current and future PDC challenges. The majority of the current effort of integrating PDC in undergraduate curriculum limited to upper division classes such as operating systems, networks, systems programming, computer architecture, with very few efforts introductory classes.</p>
+				<p>The overall goal of this project is to prepare CS/CE/Engineering undergraduate students for their future careers in light of the technological shifts towards parallelism by incorporating PDC topics throughout their curriculum following ACM/IEEE and TCPP curriculum guidelines. To achieve this goal, our project will be to pull education professionals from across the nation to workshops where they can receive training in PDC and the material necessary to introduce the concepts in their curriculum.</p>
+			</details>
+			<details closed>
+				<summary>Black Box (Complected)</summary>
+				<p>New Knowledge that often can only be derived by combing data gathered from multiple sources can increase profits for business, or even save or improve people’s lives. Typically, however, source institutions do not want their information to be known. Reasons include protecting trade-secrets, avoiding violating HIPPA, FERPA, or other privacy laws, and protecting government secrets. In fact, often such institutions would rather not produce the valuable information if it means that the secrecy of the source data would be violated. This project creates an architecture that provides a computing platform with secure protocols, physical security, and a secure computational environment for combining data from distributed sources.</p>
+			</details>
 		</main>
 
-		<footer id="page-footer">
+		<footer id="page_footer">
 			<address>
 				<p>Tennessee Tech. University</p>
 				<p>Cookeville, TN, 38505</p>

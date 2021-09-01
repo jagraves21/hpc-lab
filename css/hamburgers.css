@@ -6,7 +6,7 @@
  * @link https://github.com/jonsuh/hamburgers
  */
 .hamburger {
-	padding: 5px 10px;
+	padding: 8px;
 	display: inline-block;
 	cursor: pointer;
 	transition-property: opacity, filter;
@@ -62,10 +62,10 @@
 	display: block;
 }
 .hamburger-inner::before {
-	top: -7px;
+	top: -6px;
 }
 .hamburger-inner::after {
-	bottom: -7px;
+	bottom: -6px;
 }
 
 /*

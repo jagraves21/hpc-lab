@@ -6,29 +6,25 @@
 		<meta name="robots" content="noindex">
 		<title>HPCS Lab</title>
 		<link rel="icon" type="image/png" href="/images/favicons/invader.png">
-		<link rel="stylesheet" href="/css/typography.css">
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/hamburgers.css">
 		<link rel="stylesheet" href="/css/layout.css">
+		<link rel="stylesheet" href="/css/typography.css">
 		<link rel="stylesheet" href="/css/color.css">
 		<link rel="stylesheet" href="/css/card.css">
-		<link rel="stylesheet" href="/css/hamburgers.css">
 		<script src="/javascript/main.js"></script>
 	</head>
 
-	<body>
-		<header id="page-header">
+	<body id="home">
+		<header id="page_header">
 			<h1>High-Performance Computing and Systems Lab</h1>
 		</header>
 		
-		<div id="top-nav">
-			<div class="logo">
-				<a href="/" class="active">HPCS Lab</a>
-				<button id="top-nav-hamburger" class="hamburger hamburger--squeeze" type="button">
-					<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-					</span>
-				</button>
+		<div id="top_nav">
+			<div id="top_nav_logo">
+				<a href="/" class="logo active">HPCS Lab</a>
 			</div>
-			<nav>
+			<nav id="top_nav_links">
 				<a href="/" class="active">Home</a>
 				<a href="/people.html">People</a>
 				<a href="/research.html">Research</a>
@@ -37,29 +33,33 @@
 			</nav>
 		</div>
 
-		<main id="home">
-			<section class="recent-news">
-				<h2>Recent News</h2>
-				<p>Ryan Marshall and Md Bulbul Sharif received best paper award for their paper (Title: A System for Performance Porting of Iterative Structured Grid Applications in HPC Environments) in ICCIT’2018.</p>
-				<p>Sheikh Rabiul Islam presented two papers (Title: Mining Illegal Insider Trading of Stocks: A Proactive Approach, Title: A Flexible-blocking Based Approach for Performance Tuning of Matrix Multiplication Routines for Large Matrices with Edge Cases) in IEEE Big Data’ 2018 conference.</p>
-				<p>Md Bulbul Sharif received a travel grant to volunteer in 2018 Supercomputing Conference.</p>
-				<p>Md Mosharaf Hossain and Ryan Marshall received travel grant to volunteer in 2017 Supercomputing Conference.</p>
-				<p>Mohammad Arman Ullah received a travel grant to attend 2017 IEEE Secure Development Conference.</p>
+		<main>
+			<section>
+				<h2>Placeholder</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla porttitor tellus, vitae faucibus purus iaculis non. Maecenas viverra porttitor quam non vehicula. Phasellus faucibus ex dui, quis volutpat erat viverra quis. Integer facilisis efficitur ultrices. Sed sed ante sit amet felis finibus ornare in vel erat. Ut convallis risus eu varius gravida. Nulla et consectetur lorem. Cras pharetra mollis tellus, ut varius orci malesuada id. Ut ut nulla tellus. Ut sodales, velit sit amet pulvinar dapibus, nunc ligula varius sapien, vel ultrices elit nisl sed ligula. Sed finibus lorem sed magna faucibus, pulvinar dapibus nunc elementum.</p>
+				<aside class="recent-news">
+						<h2>Recent News</h2>
+						<p>Ryan Marshall and Md Bulbul Sharif received best paper award for their paper (Title: A System for Performance Porting of Iterative Structured Grid Applications in HPC Environments) in ICCIT’2018.</p>
+						<p>Sheikh Rabiul Islam presented two papers (Title: Mining Illegal Insider Trading of Stocks: A Proactive Approach, Title: A Flexible-blocking Based Approach for Performance Tuning of Matrix Multiplication Routines for Large Matrices with Edge Cases) in IEEE Big Data’ 2018 conference.</p>
+						<p>Md Bulbul Sharif received a travel grant to volunteer in 2018 Supercomputing Conference.</p>
+						<p>Md Mosharaf Hossain and Ryan Marshall received travel grant to volunteer in 2017 Supercomputing Conference.</p>
+						<p>Mohammad Arman Ullah received a travel grant to attend 2017 IEEE Secure Development Conference.</p>
+				</aside>
+				<aside class="upcoming-conferences">
+						<h2>Upcoming Conferences</h2>
+						<ul>
+							<li><a href="https://bigdataieee.org/BigData2021/" target="_blank" rel="noopener noreferrer">IEEE Big Data</a></li>
+							<li><a href="https://www.ipdps.org/" target="_blank" rel="noopener noreferrer">IPDPS</a></li>
+							<li><a href="https://sc21.supercomputing.org/" target="_blank" rel="noopener noreferrer">Supercomputing (SC21)</a></li>
+							<li><a href="https://hipc.org/" target="_blank" rel="noopener noreferrer">HiPC</a></li>
+							<li><a href="http://heteropar2021.bsc.es/" target="_blank" rel="noopener noreferrer">HeteroPar</a></li>
+							<li><a href="https://tcpp.cs.gsu.edu/curriculum/?q=edupar21" target="_blank" rel="noopener noreferrer">EduPar</a></li>
+						</ul>
+				</aside>
 			</section>
-			<aside class="upcoming-conferences">
-				<h2>Upcoming Conferences</h2>
-				<ul>
-					<li><a href="https://bigdataieee.org/BigData2021/" target="_blank" rel="noopener noreferrer">IEEE Big Data</a></li>
-					<li><a href="https://www.ipdps.org/" target="_blank" rel="noopener noreferrer">IPDPS</a></li>
-					<li><a href="https://sc21.supercomputing.org/" target="_blank" rel="noopener noreferrer">Supercomputing (SC21)</a></li>
-					<li><a href="https://hipc.org/" target="_blank" rel="noopener noreferrer">HiPC</a></li>
-					<li><a href="http://heteropar2021.bsc.es/" target="_blank" rel="noopener noreferrer">HeteroPar</a></li>
-					<li><a href="https://tcpp.cs.gsu.edu/curriculum/?q=edupar21" target="_blank" rel="noopener noreferrer">EduPar</a></li>
-				</ul>	
-			</aside>
 		</main>
 
-		<footer id="page-footer">
+		<footer id="page_footer">
 			<address>
 				<p>Tennessee Tech. University</p>
 				<p>Cookeville, TN, 38505</p>

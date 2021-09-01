@@ -1,59 +1,76 @@
 /*
- * General
+ * Header
  * */
-h1 {
+#page_header > h1 {
 	font-size: 50pt;
 	font-weight: bold;
 	font-variant: small-caps;
 	font-family: serif;
 }
 
-h2 {
+/*
+ * Top Bar
+ * */
+#top_nav {
+	font-size: 20pt;	
+}
+
+#top_nav_logo > a,
+#top_nav_links > a {
+	font-variant: small-caps;
+}
+
+#top_nav_logo > a,
+#top_nav_links > a {
+	text-decoration: none;
+}
+
+#top_nav_logo > a.active,
+#top_nav_links > a.active {
+	font-weight: bold;
+}
+
+/*
+ * Main
+ * */
+main {
+	font-size: 15pt;
+	font-family: serif;
+}
+main > section > h2,
+main > details > summary {
 	font-size: 25pt;
 	font-weight: bold;
 	font-variant: small-caps;
 	font-family: serif;
 }
 
-p.justify {
+main > section > p,
+main > details > p {
 	text-align: justify;
 	text-justify: inter-word;
 }
 
-ul {
-	list-style-type: circle;
+/*
+main > details > summary::-webkit-details-marker {
+	display: none;
 }
+
+main > details > summary::before {
+	content: "+";
+	margin-right: 0.5em;
+	font-family: monospace;
+}
+
+main > details[open] > summary::before {
+	content: "-";
+	margin-right: 0.5em;
+	font-family: monospace;
+}
+*/
 
 /*
- * Body
- * */
-body {
-	font-size: 15pt;
-	font-family: serif;
-}
-
-/*
- * Header
- * */
-
-/*
- * Top Bar
- * */
-#top-nav nav {
-	font-variant: small-caps;
-}
-
-#top-nav a {
-	font-size: 20pt;
-	text-decoration: none;
-}
-
-#top-nav a.active {
-	font-weight: bold;
-}
-
-/*
- * Main
+ * Funding
  * */
 .grant .project {
 	font-weight: bold;
@@ -96,7 +113,7 @@ body {
 
 .grant .pi ~ .pi:before,
 .grant .co-pi ~ .co-pi:before {
-	content: "";
+	content: ""; 
 }
 
 .grant .pi:after,
@@ -108,12 +125,4 @@ body {
 .grant .pi:nth-last-of-type(1):after,
 .grant .co-pi:nth-last-of-type(1):after {
 	content: ".";
-}
-
-/*
- * Footer
- * */
-#page-footer p,
-#page-footer a {
-	font-size: small;
 }

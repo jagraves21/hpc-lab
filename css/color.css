@@ -1,23 +1,18 @@
-/*
- * General
- * */
-section > h2 {
-	color: #66FCF1;
-	background-color: #1F2833;
-}
 
-/*
- * Body
+/* COLORS:
+ * background #1F2833
+ * forground #66FCF1
+ * 
  * */
 
 /*
  * Header
  * */
-#page-header {
+#page_header {
 	background-color: black;
 }
 
-#page-header:after {
+#page_header:after {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -25,44 +20,63 @@ section > h2 {
 	opacity: 0.50;
 }
 
-#page-header > h1 {
+#page_header > h1 {
 	color: white;
 }
 
 /*
  * Top Bar
  * */
-#top-nav {
-	background-color: rgba(0, 0, 0, 0.0);
+#top_nav{
+	background-color: black;
 }
-
-#top-nav a {
-	color: silver;
-}
-
-#top-nav a.active,
-#top-nav a:hover {
+#top_nav_logo:after {
 	color: white;
 }
 
-#top-nav.sticky {
-	background-color: #0B0C10;
+#top_nav.has-hamburger {
+	background-color: rgba(0, 0, 0, 0.0);
+}
+#top_nav.sticky {
+	background-color: black;
 }
 
-#top-nav.sticky a.active,
-#top-nav.sticky a:hover {
+#top_nav_logo a,
+#top_nav_links a {
+	color: silver;
+}
+
+#top_nav_logo a.active,
+#top_nav_links a.active,
+#top_nav_links a:hover {
 	color: #66FCF1;
 }
 
+#top_nav.has-hamburger #top_nav_logo a.active,
+#top_nav.has-hamburger #top_nav_links a.active,
+#top_nav.has-hamburger #top_nav_links a:hover {
+	color: white;
+}
+
+#top_nav.sticky #top_nav_logo a.active,
+#top_nav.sticky #top_nav_links a.active,
+#top_nav.sticky #top_nav_links a:hover {
+	color: #66FCF1;
+}
+
+
 @media screen and (max-width: 920px) {
-	#top-nav {
-		background-color: #0B0C10;
+	#top_nav.has-hamburger {
+		background-color: black;
 	}
-	#top-nav nav {
+
+	#top_nav.has-hamburger #top_nav_links {
 		background-color: #1F2833;
 	}
-	#top-nav a.active,
-	#top-nav a:hover {
+
+	#top_nav.has-hamburger #top_nav_logo a.active,
+	#top_nav.has-hamburger #top_nav_links a.active,
+	#top_nav.has-hamburger #top_nav_links a:hover {
 		color: #66FCF1;
 	}
 }
@@ -70,15 +84,42 @@ section > h2 {
 /*
  * Main
  * */
+main > section > h2,
+main > details > summary {
+	color: #66FCF1;
+	background-color: #1F2833;
+}
 
 /*
  * Footer
  * */
-#page-footer {
-	color: silver;
+#page_footer {
+	color: #66FCF1;
 	background-color: #1F2833;
 }
 
-#page-footer a {
+#page_footer > address {
+}
+
+#page_footer > a { 
 	color: red;
 }
+
+/*
+.red-help {
+	outline: 5px dotted red;
+	border: 5px solid red;
+}
+.blue-help {
+	outline: 5px dotted blue;
+	border: 5px solid blue;
+}
+.cyan-help {
+	outline: 5px dotted cyan;
+	border: 5px solid cyan;
+}
+.coral-help {
+	outline: 5px dotted coral;
+	border: 5px solid coral;
+}
+*/
