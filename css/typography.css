@@ -69,6 +69,25 @@ main > details[open] > summary::before {
 }
 */
 
+
+/*
+ * People
+ * */
+.card-info p.title:before {
+	content: "Title: ";
+	font-weight: bold;
+}
+
+.card-info p.advisor:before {
+	content: "Advisor: ";
+	font-weight: bold;
+}
+
+.card-info p.research:before {
+	content: "Research Interests: ";
+	font-weight: bold;
+}
+
 /*
  * Funding
  * */
